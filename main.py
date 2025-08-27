@@ -13,7 +13,7 @@ def get_supabase_client() -> Client:
     return create_client(SUPABASE_URL, SUPABASE_API_KEY)
 
 def select_rows_from_table(client: Client, table_name: str) -> dict[str, str | int]:
-    response = client.table(table_name).select("*").execute()
+    response = client.table(table_name).select("*").limit(50).execute()
     return response.data
 
 # Example usage
