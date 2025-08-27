@@ -1,0 +1,12 @@
+[project]
+name = "supabaseintreg"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "pandas>=2.3.2",
+    "polars>=1.32.3",
+    "python-dotenv>=1.1.1",
+    "supabase>=2.18.1",
+]
