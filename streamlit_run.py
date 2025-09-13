@@ -120,7 +120,7 @@ def main():
     st.plotly_chart(pickups_per_day_fig, config={"scrollZoom": False})
 
     # New chart two: Analyzing the 5 most popular pick-up destinations
-    st.header("Top 5 most popular pickup destinations")
+    st.subheader("Top 5 most popular pickup destinations")
 
     # Latitude and longitude are very precise, and I don't need that. Only extract the top 3 decimals from both
     most_popular_pickup_locations = (
